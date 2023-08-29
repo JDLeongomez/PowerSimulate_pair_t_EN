@@ -117,7 +117,7 @@ ui <- fluidPage(
            tags$h3("If this was the difference in the population"),
            plotOutput("effectPlot") %>% 
              withSpinner(color = "#ff5555"),
-           tags$p(HTML("<b style=color:#ff5555;>NOTE:</b> Cohen's 
+           tags$h6(HTML("<b style=color:#ff5555;>NOTE:</b> Cohen's 
                        <em>d</em> is the most common effect size for standardised
                        differences between two means. However, it tends to provide biased estimates
                        when sample sizes are small. For this reason, Hedges' <em>g</em>
