@@ -36,7 +36,7 @@ ui <- fluidPage(
   titlePanel(title = tags$link(rel = "icon",
                                type = "image",
                                href = "https://image.pngaaa.com/393/402393-middle.png"),
-             "PowerSimulate: Paired t- test"),
+             "PowerSimulate: Paired t-test"),
   HTML("<center><a href='https://shiny.jdl-svr.lat/PowerSimulate'><img src='powersimulate.svg'' width='600'></a></center>"),
   tags$h3(HTML("<center>Paired <em>t</em>-test</center>")),
   p(HTML("<center>Code available from
