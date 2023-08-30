@@ -21,10 +21,10 @@ library(scales)
 
 input <<- tibble(
   alts = "Condition 1 ≠ Condition 2",
-  mean1 = 18.1, mean2 = 3.1,
-  sd1 = 20.3, sd2 = 2.8,
+  mean1 = 180.1, mean2 = 203.3,
+  sd1 = 32.1, sd2 = 32.8,
   reps = 1000,
-  sample_size = 50,
+  sample_size = 30,
   alpha = 0.05
 )
 
@@ -63,14 +63,14 @@ ui <- fluidPage(
                         label = "Mean",
                         min = -Inf,
                         max = Inf,
-                        value = 18.1,
+                        value = 180.1,
                         step = 0.0001,
                         width = '300px'),
            numericInput(inputId = "sd1",
                         label = "Standard deviation",
                         min = -Inf,
                         max = Inf,
-                        value = 3.1,
+                        value = 32.1,
                         step = 0.0001,
                         width = '300px'),
            hr(),
@@ -83,14 +83,14 @@ ui <- fluidPage(
                         label = "Mean",
                         min = -Inf,
                         max = Inf,
-                        value = 20.3,
+                        value = 203.3,
                         step = 0.0001,
                         width = '300px'),
            numericInput(inputId = "sd2",
                         label = "Standard deviation",
                         min = -Inf,
                         max = Inf,
-                        value = 2.8,
+                        value = 32.8,
                         step = 0.0001,
                         width = '300px')
     ),
